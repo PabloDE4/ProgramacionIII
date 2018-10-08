@@ -108,12 +108,15 @@ class Usuario
                 $ListaUsuarios[$i]->nombre = $nombre;
                 $ListaUsuarios[$i]->apellido = $apellido;
 
-                //FALTA MOVER LA IMAGEN VIEJA A LA CARPETA BACKUP
-                /*
-                copy('UsuarioImagen/[$ListaUsuarios[$i]->foto', 'backUpFotos/[$ListaUsuarios[$i]->apellido . date("d_m_y") . ".jpg"]');
-                echo "Archivo subido a la carpeta Backup correctamente. ";
-                
-                 */                
+                //COPIO IMAGEN VIEJA A BACKUP
+
+                $nombre = "UsuarioImagen/" . $ListaUsuarios[$i]->email . ".jpg";
+                $nuevoNombre = "backUpFotos/" . $ListaUsuarios[$i]->apellido . date("d_m_y") . ".jpg";
+                rename($nombre, $nuevoNombre);           
+
+                //ACTAULIZO LA NUEVA IMAGEN
+                move_uploaded_file($_FILES["foto"]["tmp_name"], "UsuarioImagen/" . $ListaUsuarios[$i]->email . ".jpg");
+     
 
                 //ACTAULIZO LA NUEVA IMAGEN
                 move_uploaded_file($_FILES["foto"]["tmp_name"], "UsuarioImagen/" . $ListaUsuarios[$i]->email . "_" . "Foto" . ".jpg");
