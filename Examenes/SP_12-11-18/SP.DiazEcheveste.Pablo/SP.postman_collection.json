@@ -1,0 +1,197 @@
+{
+	"id": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+	"name": "SP",
+	"description": "",
+	"order": [
+		"fab6dc6e-1295-cd3a-57c2-35b839ccafdc",
+		"9461280d-e530-80e3-e79a-e7f68308538d",
+		"a410482b-650a-ae09-8178-1f5e25344043",
+		"148aea29-5bbb-832d-fb46-a5cc0a4437e5",
+		"b376848f-7acc-b13f-c2f4-e94e5f97ef72",
+		"be72dd62-c138-1675-d2b1-c8c706a8797e"
+	],
+	"folders": [],
+	"timestamp": 1542068352995,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "148aea29-5bbb-832d-fb46-a5cc0a4437e5",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDIwNjc1NTEsIm5iZiI6MTU0MjA2NzU1MSwiZXhwIjoxNTQyMDcxMTUxLCJlbWFpbCI6Im1hcmlvQGdtYWlsLmNvbSIsInBlcmZpbCI6eyJpZCI6NCwiMCI6NCwicGVyZmlsIjoiYWRtaW4iLCIxIjoiYWRtaW4ifX0.j8dHFPTtNAs39qgdxrEnVyGLd8Sz3th4hMTS1_wMJRI\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": [
+				{
+					"key": "marca",
+					"value": "Iphone",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "modelo",
+					"value": "XX",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "precio",
+					"value": "80000",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "foto",
+					"value": "Penguins.jpg",
+					"type": "file",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"name": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068406092,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9461280d-e530-80e3-e79a-e7f68308538d",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/login",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": [
+				{
+					"key": "email",
+					"value": "mario@gmail.com",
+					"type": "text"
+				},
+				{
+					"key": "clave",
+					"value": "123",
+					"type": "text"
+				},
+				{
+					"key": "",
+					"value": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost/modelos/SP/Usuario-venta/login",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068400060,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a410482b-650a-ae09-8178-1f5e25344043",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDIwNjYwNzksIm5iZiI6MTU0MjA2NjA3OSwiZXhwIjoxNTQyMDY5Njc5LCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBlcmZpbCI6eyJpZCI6MiwiMCI6MiwicGVyZmlsIjoiYWRtaW4iLCIxIjoiYWRtaW4ifX0.NKyhQIsL_98qYxqq9wz9XTmrO3A_mHHOq1rt60BV7Yk\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/usuario",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/SP.DiazEcheveste.Pablo/usuario",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068403363,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "b376848f-7acc-b13f-c2f4-e94e5f97ef72",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDIwNjcwOTYsIm5iZiI6MTU0MjA2NzA5NiwiZXhwIjoxNTQyMDcwNjk2LCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBlcmZpbCI6eyJpZCI6MiwiMCI6MiwicGVyZmlsIjoiYWRtaW4iLCIxIjoiYWRtaW4ifX0.kvY-0dXjjH1yQiLt4TJ4ufxDKndxQQGrIOnTMj5gLUY\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068409356,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "be72dd62-c138-1675-d2b1-c8c706a8797e",
+			"headers": "token: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDIwNjcwOTYsIm5iZiI6MTU0MjA2NzA5NiwiZXhwIjoxNTQyMDcwNjk2LCJlbWFpbCI6ImFkbWluQGFkbWluLmNvbSIsInBlcmZpbCI6eyJpZCI6MiwiMCI6MiwicGVyZmlsIjoiYWRtaW4iLCIxIjoiYWRtaW4ifX0.kvY-0dXjjH1yQiLt4TJ4ufxDKndxQQGrIOnTMj5gLUY\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra/Samsung",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": [],
+			"dataMode": "urlencoded",
+			"name": "http://localhost:8080/SP.DiazEcheveste.Pablo/compra/Samsung",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068412228,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "fab6dc6e-1295-cd3a-57c2-35b839ccafdc",
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"url": "http://localhost:8080/SP.DiazEcheveste.Pablo/usuario",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "5b4c39df-c108-664f-7727-d94e1d3eae9a",
+			"data": [
+				{
+					"key": "email",
+					"value": "mario@gmail.com",
+					"type": "text"
+				},
+				{
+					"key": "clave",
+					"value": "123",
+					"type": "text"
+				},
+				{
+					"key": "perfil",
+					"value": "admin",
+					"type": "text"
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "http://localhost/modelos/SP/Usuario-venta/usuario",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1542068396068,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
