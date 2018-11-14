@@ -59,4 +59,15 @@ class Compra
         return $consulta->fetchAll(PDO::FETCH_CLASS, "Compra");
     }
 
+    public static function ConsultarCompras()
+    {
+        $objetoAccesoDato = AccesoDatos::dameUnObjetoAcceso();
+
+        $consulta = $objetoAccesoDato->RetornarConsulta("SELECT DISTINCT modelo, marca FROM comprasusuario");
+
+        $consulta->execute();
+
+        return $consulta->fetchAll(PDO::FETCH_CLASS, "Compra");
+    }
+
 }

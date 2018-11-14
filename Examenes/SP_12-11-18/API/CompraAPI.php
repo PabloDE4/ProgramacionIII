@@ -88,6 +88,14 @@ class CompraAPI extends Compra
 
     }
 
+    public function TraerVentas($request, $response, $args)
+    {
+        $respuesta = Compra::ConsultarCompras();
+        $newResponse = $response->withJson($respuesta, 200);
+        return $newResponse;
+
+    }
+
 }
 
 

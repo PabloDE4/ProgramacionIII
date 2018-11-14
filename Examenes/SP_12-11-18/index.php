@@ -41,6 +41,10 @@ $app->get('/compra/{marca}[/]', \CompraAPI::class . ':TraerMarcas')
     ->add(\TokenMiddleware::class . ':ValidarAdmin')
     ->add(\TokenMiddleware::class . ':ValidarToken');
 
+$app->get('/productos[/]', \CompraAPI::class . ':TraerVentas')
+    ->add(\HistorialMiddleware::class . ':GenerarHistorial')
+    ->add(\TokenMiddleware::class . ':ValidarToken');
+
 $app->run();
 
 ?>
