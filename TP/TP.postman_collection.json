@@ -1,0 +1,1421 @@
+{
+	"info": {
+		"_postman_id": "ca085f77-8ef4-49ce-9783-6ce33c5d2c79",
+		"name": "TP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Empleados",
+			"item": [
+				{
+					"name": "RegistroEmpleado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU1NzksIm5iZiI6MTU0MjY0NTU3OSwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.-i_f9HaBg_oKwLFjNsMdFDSXuAJrGN-rfVggvlMrzWo",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "nombre",
+									"value": "Ailen",
+									"type": "text"
+								},
+								{
+									"key": "usuario",
+									"value": "ailen",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "malencuyen",
+									"type": "text"
+								},
+								{
+									"key": "perfil",
+									"value": "socio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/registrar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "LoginEmpleado",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "usuario",
+									"value": "joselito",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123456",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/TP/empleado/login",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"TP",
+								"empleado",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarEmpleado",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/listar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarEmpleado",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/3",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SuspenderEmpleado",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/suspender/4",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"suspender",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ModificarEmpleado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "nombre",
+									"value": "Jose",
+									"type": "text"
+								},
+								{
+									"key": "usuario",
+									"value": "joselito",
+									"type": "text"
+								},
+								{
+									"key": "clave",
+									"value": "123456",
+									"type": "text"
+								},
+								{
+									"key": "perfil",
+									"value": "mozo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/modificar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"modificar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cantidad de operaciones por sector",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/operacionesSector",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"operacionesSector"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Operaciones por sector de Empleado",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "sector",
+									"value": "socio",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/operacionesSectorEmpleado",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"operacionesSectorEmpleado"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Lista de Empleados entre fechas Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "fecha1",
+									"value": "2018-11-18",
+									"type": "text"
+								},
+								{
+									"key": "fecha2",
+									"value": "2018-11-20",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/empleado/fechasLogin",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"empleado",
+								"fechasLogin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pedidos",
+			"item": [
+				{
+					"name": "AgregarPedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjE3OTUsIm5iZiI6MTU0MjY2MTc5NSwiaWQiOjQsIm5vbWJyZSI6Ikpvc2UiLCJ1c3VhcmlvIjoiam9zZWxpdG8iLCJwZXJmaWwiOiJtb3pvIn0.dXfYsEuwwOHrCQX0E91NTofuVOeAu5-FXH7ByekT9iU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "id_mesa",
+									"value": "mesa03",
+									"type": "text"
+								},
+								{
+									"key": "pedido",
+									"value": "Milanesa con pure",
+									"type": "text"
+								},
+								{
+									"key": "cantidad",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "importe",
+									"value": "150",
+									"type": "text"
+								},
+								{
+									"key": "cliente",
+									"value": "Juan Gonzalez",
+									"type": "text"
+								},
+								{
+									"key": "sector",
+									"value": "cocina",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/registrar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CancelarPedido",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjE3OTUsIm5iZiI6MTU0MjY2MTc5NSwiaWQiOjQsIm5vbWJyZSI6Ikpvc2UiLCJ1c3VhcmlvIjoiam9zZWxpdG8iLCJwZXJmaWwiOiJtb3pvIn0.dXfYsEuwwOHrCQX0E91NTofuVOeAu5-FXH7ByekT9iU",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/y2qyf",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"y2qyf"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarTodosPedidos",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/listarTodos",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"listarTodos"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarPedidosPendientes",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/listarPendientes",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"listarPendientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarPedidosCancelados",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/listarCancelados",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"listarCancelados"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "TomarPedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2Njc3NzUsIm5iZiI6MTU0MjY2Nzc3NSwiaWQiOjcsIm5vbWJyZSI6IkVkdWFyZG8iLCJ1c3VhcmlvIjoiZWR1IiwicGVyZmlsIjoiY29jaW5lcm8ifQ.m1NQuhOpoQiwOdxnxTFTrmUe-_GA3E7JJiHhaKx0EB8",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "eg2u5",
+									"type": "text"
+								},
+								{
+									"key": "minutosEstimados",
+									"value": "5",
+									"type": "text"
+								},
+								{
+									"key": "mesa",
+									"value": "mesa03",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/tomarPedido",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"tomarPedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Pedido para servir",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI3NDIwODMsIm5iZiI6MTU0Mjc0MjA4MywiaWQiOjQsIm5vbWJyZSI6Ikpvc2UiLCJ1c3VhcmlvIjoiam9zZWxpdG8iLCJwZXJmaWwiOiJtb3pvIn0.A-1Yaq34UpcPdDE3o7sjG88dkLJgI-nx7T9ansHWHas"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "eg2u5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/pedidoListo",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"pedidoListo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ServirPedido",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI3NDIwODMsIm5iZiI6MTU0Mjc0MjA4MywiaWQiOjQsIm5vbWJyZSI6Ikpvc2UiLCJ1c3VhcmlvIjoiam9zZWxpdG8iLCJwZXJmaWwiOiJtb3pvIn0.A-1Yaq34UpcPdDE3o7sjG88dkLJgI-nx7T9ansHWHas",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "eg2u5",
+									"type": "text"
+								},
+								{
+									"key": "mesa",
+									"value": "mesa03",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/servirPedido",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"servirPedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CobrarMesa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NzU1ODEsIm5iZiI6MTU0MjY3NTU4MSwiaWQiOjQsIm5vbWJyZSI6Ikpvc2UiLCJ1c3VhcmlvIjoiam9zZWxpdG8iLCJwZXJmaWwiOiJtb3pvIn0.FdmUpWNAzeRL2rZiJxWJ3Wo93RLmkltGsCJxnMluUyA"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "eg2u5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/cobrarPedido",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"cobrarPedido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consulta de pedido por user",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/tiempoRestante/ba0ey",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"tiempoRestante",
+								"ba0ey"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Listar fuera de tiempo",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/listarFueradeTiempo",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"listarFueradeTiempo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mas vendido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/masVendido",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"masVendido"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menos vendido",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/pedido/menosVendido",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"pedido",
+								"menosVendido"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mesas",
+			"item": [
+				{
+					"name": "RegistrarMesa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "mesa05",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/registrar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarMesas",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/listar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cerrar Mesa",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/cerrar/mesa03",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"cerrar",
+								"mesa03"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrarMesa",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/mesa15",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"mesa15"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ActualizarFotoMesa",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "codigo",
+									"value": "mesa04",
+									"type": "text"
+								},
+								{
+									"key": "foto",
+									"type": "file",
+									"src": ""
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/foto",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"foto"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mas usada",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/masUsada",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"masUsada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menos usada",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/menosUsada",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"menosUsada"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mas Facturacion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/masFacturacion",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"masFacturacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menos facturacion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/menosFacturacion",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"menosFacturacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mayor importe",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NjM3MjIsIm5iZiI6MTU0MjY2MzcyMiwiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.pAEKA-C3hvgFTMHLRGGh1WjryrmqFAIlUkE_e6fDa4M",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/mayorImporte",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"mayorImporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menor importe",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/menorImporte",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"menorImporte"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Mejor puntuacion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/mejorPuntuacion",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"mejorPuntuacion"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Menor Puntuacion",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/mesas/peorPuntuacion",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"mesas",
+								"peorPuntuacion"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Encuesta",
+			"item": [
+				{
+					"name": "RegistrarEncuesta",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "puntuacionMesa",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "codigoMesa",
+									"value": "mesa01",
+									"type": "text"
+								},
+								{
+									"key": "puntuacionRestaurante",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "puntuacionMozo",
+									"value": "9",
+									"type": "text"
+								},
+								{
+									"key": "puntuacionCocinero",
+									"value": "8",
+									"type": "text"
+								},
+								{
+									"key": "comentario",
+									"value": "Muy rico todo",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/encuesta/registrar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"encuesta",
+								"registrar"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ListarEncuesta",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/encuesta/listar",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"encuesta",
+								"listar"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Facturacion",
+			"item": [
+				{
+					"name": "PDF",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/facturas/listarPDF",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"facturas",
+								"listarPDF"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Excel",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "token",
+								"type": "text",
+								"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiIiLCJhdWQiOiIiLCJpYXQiOjE1NDI2NDU4MjcsIm5iZiI6MTU0MjY0NTgyNywiaWQiOjEsIm5vbWJyZSI6IlBhYmxvIiwidXN1YXJpbyI6InBhYmxvIiwicGVyZmlsIjoic29jaW8ifQ.yPIkBJ-cVzfX_Ihmt-xbzf8yZ_qjpgld0W8u661sDt0"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://pablode.000webhostapp.com/facturas/listarExcel",
+							"protocol": "https",
+							"host": [
+								"pablode",
+								"000webhostapp",
+								"com"
+							],
+							"path": [
+								"facturas",
+								"listarExcel"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
